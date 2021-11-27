@@ -1,0 +1,1 @@
+docker build . -t salapus/test-google-book-app
