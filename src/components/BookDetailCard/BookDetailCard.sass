@@ -1,0 +1,66 @@
+.BookDetailCard
+  height: 75vh
+  width: 90vw
+
+  z-index: 100
+
+  background-color: white
+
+  display: grid
+
+  grid-template-columns: repeat(2, 40vw)
+  grid-template-rows: repeat(16, 4vh)
+
+  overflow: hidden
+
+  &-image
+    grid-row: span 16
+
+    width: 100%
+    height: 75vh
+
+    position: relative
+
+    img
+      height: 90%
+      max-width: 100%
+
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+  &-cathegories
+    grid-row: span 1
+    grid-column: 2 / 3
+
+    align-self: end
+
+    font-style: italic
+    text-decoration: underline solid #585858
+
+  &-author
+    grid-row: span 3
+    grid-column: 2 / 3
+
+    align-self: end
+    font-size: 3.5vh
+
+  &-title
+    grid-row: span 3
+    grid-column: 2 / 3
+
+    align-self: start
+
+    font-weight: 900
+    font-size: 4vh
+
+  &-pages
+    grid-row: span 1
+    grid-column: 2 / 3
+
+  &-description
+    grid-row: span 8
+    grid-column: 2 / 3
+
+    overflow-y: scroll
