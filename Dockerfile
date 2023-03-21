@@ -14,6 +14,4 @@ RUN npm run build:prod
 
 EXPOSE 8080
 
-ENV API_KEY=AIzaSyBuIQNouaGz1xKFc-7zKxZr03X6gRSoGZ0
-
 CMD [ "node", "server.js" ]
